@@ -59,10 +59,36 @@
         <h2 class="sm-heading">
             Some Text Here...
         </h2>
+        
+        <!--Mail To Link-->
         <div class="boxes">
-            <div>
-                <span class="text-secondary">Email: </span> marcosalcantar97@gmail.com
-            </div>
+                <div>
+                    <a href="mailto:marcosalcantar97@gmail.com">
+                        <span class="text-secondary">Email: </span> marcosalcantar97@gmail.com
+                    </a>
+                </div>
+        </div>
+
+        <!--Contact Form-->
+        <div class="contact-container">
+            <form action="https://formspree.io/marcosalcantar97@gmail.com" 
+            method="POST" id="contact-form">
+              
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fullname">
+
+                <label for="email">Email</label>  
+                <input type="text" id="email" name="email">  
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" style="height:200px"></textarea>
+          
+                <input type="submit" value="Submit">
+          
+            </form>
         </div>
     </main>
 
