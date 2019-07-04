@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #262626;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #333333;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -73,7 +73,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-clor(#444);
+    color: set-text-clor(#333333);
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -95,16 +95,19 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #333333;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/melee.gif);
-    background-attachment: fixed;
-    background-size: cover; }
+    background: url(../img/piano_pic.jpg);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333333; }
     body#bg-img:after {
       content: '';
       position: fixed;
@@ -113,7 +116,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8); }
+      background: rgba(51, 51, 51, 0.5); }
 
 h1, h2, h3 {
   margin: 0;
@@ -124,7 +127,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(56, 56, 56, 0.5); }
 
 a {
   color: #fff;
@@ -169,7 +172,7 @@ main {
       align-items: center;
       justify-content: center; }
     main#home #about-me {
-      margin-top: 15vh; }
+      margin-top: 5vh; }
 
 .about-info {
   display: grid;
@@ -196,7 +199,7 @@ main {
   grid-area: job3; }
 
 .job {
-  background: #515151;
+  background: #404040;
   padding: 0.5rem;
   border-bottom: #4dbeff 5px solid; }
 
@@ -284,19 +287,34 @@ input[type=submit]:hover {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #b3b3b3;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #1a1a1a;
   color: #fff;
   height: 60px; }
 
+@media screen and (min-width: 1171px) {
+  main#home #about-me {
+    margin-top: 20vh; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .lg-heading {
+    line-height: 1;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+  main#home h1 {
+    margin-top: 10vh;
+    margin-bottom: 1rem; }
+  main#home #about-me {
+    margin-top: 12vh; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -309,6 +327,10 @@ input[type=submit]:hover {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center; }
+  main#home h1 {
+    margin-top: 10vh;
+    margin-bottom: 1rem;
+    font-size: 5rem; }
   #down-button {
     visibility: hidden; }
   ul.menu-nav,
@@ -330,6 +352,8 @@ input[type=submit]:hover {
       background: url("../img/selfPortrait2Small.jpg");
       width: 150px;
       height: 148px; }
+  main#home #about-me {
+    margin-top: 10vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -338,6 +362,15 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    margin-bottom: 1rem;
+    font-size: 3.7rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .bio-image {
+    margin: 0; }
+  .about-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-self: center; } }

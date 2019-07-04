@@ -1,12 +1,31 @@
 // Widescreens
 @include mediaXl {
-    
+    main#home #about-me {
+        margin-top: 20vh;
+    }
 }
 
 // Desktops and Laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lg-heading {
+        line-height: 1;
+        flex-flow: column wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main#home h1 {
+        margin-top: 10vh;
+        margin-bottom: 1rem;
+    }
+
+    main#home #about-me {
+        margin-top: 12vh;
     }
 }
 
@@ -24,6 +43,13 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
+    }
+
+    // Big heading margins
+    main#home h1 {
+        margin-top: 10vh;
+        margin-bottom: 1rem;
+        font-size: 5rem;
     }
 
     #down-button {
@@ -58,6 +84,10 @@
         }
     }
 
+    main#home #about-me {
+        margin-top: 10vh;
+    }
+
     .about-info {
         grid-template-areas: 
         'bioimage'
@@ -78,9 +108,22 @@
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
+        margin-bottom: 1rem;
+        font-size: 3.7rem;
     }
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .bio-image {
+        margin: 0;
+    }
+
+    .about-info {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-self: center;
     }
 }

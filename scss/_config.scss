@@ -1,8 +1,8 @@
-$primary-color: #444;
+$primary-color: rgb(51, 51, 51);
 $secondary-color: #4dbeff;
 $show-home-image: true;
-$home-image: url(../img/melee.gif);
-$background-opacity: 0.8;
+$home-image: url(../img/piano_pic.jpg);
+$background-opacity: 0.5;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -12,8 +12,13 @@ $background-opacity: 0.8;
     @if $show-home-image {
         &#bg-img {
             background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
+            //background-attachment: scroll;
+            background-position: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover; //contain
+            background-color: $primary-color;
+            //position: relative;
 
             &:after {
                 content:'';
