@@ -2,6 +2,8 @@
 @include mediaXl {
     main#home #about-me {
         margin-top: 20vh;
+        margin-left: 8rem;
+        margin-right: 8rem;
     }
 
     // Heading in Projects section
@@ -15,8 +17,8 @@
     }
 
     // Heading in Experience section
-    main#experience h1.lg-heading {
-        margin-left: 0;
+    main#contact h1.lg-heading {
+        text-align: center;
     }
 
     // Don't show button for large screens
@@ -36,7 +38,13 @@
 // Desktops and Laptops
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main#projects-body {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     .lg-heading {
@@ -58,6 +66,8 @@
 
     main#home #about-me {
         margin-top: 12vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     // Don't show button for large screens
@@ -145,7 +155,13 @@
     }
 
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        //grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    main#projects-body {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
