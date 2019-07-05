@@ -1,9 +1,9 @@
 {
   "name": "marcos-portfolio",
   "version": "1.0.0",
-  "description": "Responsive portfolio website",
+  "description": "Personal Website",
   "main": "index.js",
-  "homepage": "https://marcosa97.github.io/PortfolioWebsite",
+  "homepage": "https://marcosa97.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
