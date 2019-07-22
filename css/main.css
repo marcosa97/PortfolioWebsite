@@ -56,7 +56,7 @@
       width: 250px;
       height: 246px;
       size: 10%;
-      background: url("../img/selfPortrait2Resized.JPG");
+      background: url("../img/selfPortrait2Resized.jpg");
       border-radius: 50%;
       border: solid 3px #4dbeff; }
   .menu .nav-item {
@@ -207,8 +207,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio'
- 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -268,6 +267,10 @@ main#projects-body {
       opacity: 0.7rem;
       border-color: #4dbeff;
       transition: all 0.5s ease-out; }
+  .projects p a {
+    color: #4dbeff; }
+  .projects p a:hover {
+    color: #0092e6; }
 
 main#contact {
   padding-top: 0rem; }
@@ -439,17 +442,13 @@ input[type=submit]:hover {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/selfPortrait2Small.JPG");
+      background: url("../img/selfPortrait2Small.jpg");
       width: 150px;
       height: 148px; }
   main#home #about-me {
     margin-top: 10vh; }
   .about-info {
-    grid-template-areas: 'bioimage'
- 'bio'
- 'job1'
- 'job2'
- 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; }
